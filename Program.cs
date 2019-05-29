@@ -20,8 +20,9 @@ namespace BinarySearchTree
 
             for (int i = 0; i < 5; ++i)
             {
-                SearchRecursively(rand.Next(101), rootNode);
-                SearchEnumerating(rand.Next(101), rootNode);
+                var key = rand.Next(101);
+                SearchRecursively(key, rootNode);
+                SearchEnumerating(key, rootNode);
             }
         }
 
